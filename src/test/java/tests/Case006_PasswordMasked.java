@@ -26,7 +26,7 @@ public class Case006_PasswordMasked {
         // 5) The password field should display the characters in asterisks or bullets such that
         // the password is not visible on the screen
         ReusableMethods.getScreenshot("Password masked");
-        // Screenshot saved to target/Screenshots/Password masked20230109062154.png
+        // Screenshot was taken and saved to target/Screenshots/Password masked20230109062154.png
 
     }
 }
