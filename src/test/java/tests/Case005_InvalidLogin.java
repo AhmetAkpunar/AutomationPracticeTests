@@ -7,11 +7,10 @@ import utilities.ConfigReader;
 import utilities.Driver;
 import utilities.ReusableMethods;
 
-public class Case004_InvalidLogin {
+public class Case005_InvalidLogin {
 
-    @Test (testName = "Empty username & valid password Test")
+    @Test(testName = "Empty username & empty password Test")
     public void test01(){
-
         // 1) Open the browser
         // 2) Enter the URL “http://practice.automationtesting.in/”
         Driver.getDriver().get("http://practice.automationtesting.in/");
@@ -24,13 +23,15 @@ public class Case004_InvalidLogin {
         // 4) Enter empty username in username textbox
         practiceAutomation.username.sendKeys(ConfigReader.getProperty("emptyUsername"));
         // 5) Now enter valid password in the password textbox
-        practiceAutomation.password.sendKeys(ConfigReader.getProperty("password"));
+        practiceAutomation.password.sendKeys(ConfigReader.getProperty("emptyPassword"));
         // 6) Click on login button.
         practiceAutomation.login.click();
-        // 7) Proper error must be displayed(ie Invalid username) and prompt to enter login again
+        // 7) Proper error must be displayed(ie required username) and prompt to enter login again
         String expectedError ="Username is required.";
         Assert.assertTrue(practiceAutomation.invalidLoginError.getText().contains(expectedError));
         // 8) Close the Driver
         Driver.closeDriver();
+
     }
 }
+//

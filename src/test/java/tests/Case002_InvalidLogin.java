@@ -26,7 +26,7 @@ public class Case002_InvalidLogin {
         //6) Click on login button
         practiceAutomation.login.click();
         //7) Proper error must be displayed(ie Invalid username) and prompt to enter login again
-        Assert.assertTrue(practiceAutomation.invalidLogin.isDisplayed());
+        Assert.assertTrue(practiceAutomation.invalidLoginError.isDisplayed());
         //8) Close the browser
         Driver.closeDriver();
     }

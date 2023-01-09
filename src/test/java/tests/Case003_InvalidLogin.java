@@ -28,7 +28,7 @@ public class Case003_InvalidLogin {
         practiceAutomation.login.click();
         // 7) Proper error must be displayed(ie Invalid password) and prompt to enter login again
         String expectedError="Password is required.";
-        Assert.assertTrue(practiceAutomation.invalidLogin.getText().contains(expectedError));
+        Assert.assertTrue(practiceAutomation.invalidLoginError.getText().contains(expectedError));
         // 8) Close the Driver
         Driver.closeDriver();
     }

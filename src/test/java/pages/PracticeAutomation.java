@@ -35,6 +35,6 @@ public class PracticeAutomation {
     public WebElement myAccountNavBar;
 
     @FindBy(xpath = "//*[@class='woocommerce-error']")
-    public WebElement invalidLogin;
+    public WebElement invalidLoginError;
 
 }
