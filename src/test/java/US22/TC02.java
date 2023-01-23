@@ -24,5 +24,6 @@ public class TC02 {
         // Click on Description textbox and Test that it is enabled
         qualitydemyUserCoursePage.reachCourseManagerPage();
         qualitydemyUserCoursePage.courseTitleShortDescription(2);
+
     }
 }
